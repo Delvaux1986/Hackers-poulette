@@ -10,11 +10,10 @@ body{
 header{
     background-color:#303030;
     color:#0d8187;
-    box-shadow: 12px 12px 2px 1px rgba(250, 250, 250, .5);
 }
 img{
     position: absolute;
-    bottom: 10vh;
+    bottom: 0vh;
     right:5px;
     width:256px;
     height:256px;
