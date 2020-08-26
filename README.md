@@ -6,6 +6,8 @@
 
 [Liste des choses a faire](https://github.com/becodeorg/CRL-Woods-3.21/tree/master/LearningPath/03.The-Mountain/12.PHP/PHP-Challenges/hackers-poulette)
 
+[Lien vers la version ONLINE](https://delvauxrobby.yj.fr/delvauxrobby.yj.fr/blog/Assets/hackers-poulette/)
+
 1. Créer un Formulaire avec :
     1. Name & Lastname
     2. Gender 
