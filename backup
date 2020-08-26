@@ -1,0 +1,52 @@
+  if ($_SERVER["REQUEST_METHOD"] == "POST") { // CHECK IF EMPTY ERROR MSG ELSE SECU DATA BEFORE INIT
+        if (isset($_POST["firstname"])) {
+            $_SESSION['firstname'] = Securisation($_POST["firstname"]);
+            $firstnameStatus = true;
+            echo '<p class="text-center">firstname ok </p><br>';
+        } else {
+            $firstnameErr = "Firstname is required";
+        }
+        if (isset($_POST["lastname"])) {                
+            $_SESSION['lastname'] = Securisation($_POST["lastname"]);
+            $textfieldStatus = true;
+            echo '<p class="text-center">Lastname ok </p><br>';
+        } else {
+            $lastnameErr = "lastname is required";
+        }
+        if (isset($_POST["gender"])) {                
+            $_SESSION['gender'] = Securisation($_POST["gender"]);
+            $genderStatus = true ;
+            echo '<p class="text-center">Gender ok </p><br>';
+        } else {
+            $genderErr = "Gender is required";
+        }
+        if (isset($_POST["mail"])) {                
+            $_SESSION['mail'] = Securisation($_POST["mail"]);
+            $mailStatus = true ;
+            echo '<p class="text-center">E-mail ok </p><br>';
+        } else {
+            // $mail = FILTER_SANITIZE_EMAIL($_POST['mail']);
+            $mailErr = "E-mail is required";
+        }
+        if (isset($_POST["country"])) {
+            $_SESSION['mail'] = Securisation($_POST["country"]);
+            $countryStatus = true ;
+            echo '<p class="text-center">Country ok </p><br>';
+        } else {
+            $countryErr = "Country is required";
+        }
+        if (isset($_POST["subject"])) {
+            $_SESSION['subject'] = Securisation($_POST["subject"]);
+            $subjectStatus = true ;
+            echo '<p class="text-center">Subject ok </p><br>';
+        } else {
+            $subjectErr = "You need to select a subject ";
+        }
+        if (isset($_POST["textfield"])) {
+            $_SESSION['textfield'] = Securisation($_POST["textfield"]);
+            $textfieldStatus = true ;
+            echo '<p class="text-center">TextArea ok </p> <br>';
+        } else {
+            $_SESSION['textfieldErr'] = "You need to put a message ";
+        }
+    }

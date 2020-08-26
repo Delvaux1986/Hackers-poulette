@@ -1,0 +1,16 @@
+/* COLOR 
+ colors: #0d8187, #FFF, #303030 */
+
+ body{
+    background-color:#303030;
+    color:#0d8187;
+    font-family: 'Bellota', cursive;
+ }
+ h1{
+    font-family: 'Bellota', cursive;
+    text-shadow: 6px -2px 0px rgba(255, 255,255, .5);
+ }
+ h2{
+    font-family: 'Bellota', cursive;
+ }
+ 

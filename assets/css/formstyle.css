@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "Bellota serif ";
+    src : url("../font/Bellota-Regular.otf");
+}
+body{
+   background-color:#303030;
+   color:#0d8187;
+   font-family: 'Bellota serif';
+}
+header{
+    background-color:#303030;
+    color:#0d8187;
+    border-bottom: 1px solid rgb(250, 250, 250);
+    box-shadow: 12px 12px 2px 1px rgba(250, 250, 250, .5);
+}
+img{
+    position: absolute;
+    bottom: 10vh;
+    right:5px;
+    width:256px;
+    height:256px;
+}
+h2{
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 700;
+}
+p{
+    font-family: 'Bellota serif';
+}
+input{
+    margin:0 0 ;
+}
+
+.error{
+    color:red;
+}
+.validate{
+    color:black;
+}
