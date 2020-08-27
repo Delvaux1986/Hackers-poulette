@@ -3,7 +3,8 @@
     src : url("../font/Bellota-Regular.otf");
 }
 body{
-   background-color:#303030;
+   background: -webkit-linear-gradient(-9deg, rgb(48, 48, 48), rgb(120, 106, 106));
+   background: linear-gradient(-9deg, rgb(48, 48, 48), rgb(120, 106, 106));
    color:#0d8187;
    font-family: 'Bellota serif';
 }
@@ -29,7 +30,9 @@ p{
 input{
     margin:0 0 ;
 }
-
+.formu{
+    background-color:#303030;
+}
 .error{
     color:red;
 }

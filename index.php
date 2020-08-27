@@ -10,11 +10,15 @@
 </head>
 <body>
     <header>
-        <h1 class="text-center" alt="Hackers Poulette le site">Hackers-Poulette</h1>
-    </header>
-        <section class="text-center col-md-2 offset-md-5 col-sm-8 offset-sm-2 justify-content-center ">
-            <img src="./assets/img/logo.png" alt="Logo Hackers Poulette" class="img-fluid">
-            <a href="./form.php" class="btn btn-success" title="Continuer" alt="boutton continuer">Continuer</a>
-        </section>
-</body>
+        
+    </header>            
+            <section class="main card w-50 text-center col-md-4 offset-md-4 mt-5">
+                <section class="card-body">
+                    <h1 class="text-center card-title" alt="Hackers Poulette le site">Hackers-Poulette</h1>
+                    <img src="./assets/img/logo.png" alt="Logo Hackers Poulette" class="mb-5 img-fluid text-center card-img-center">
+                    <p class="card-text">Vous avez des questions ? Des avis? N'hésitez pas à nous contacter via ce formulaire, nos équipes prendront le soin d'y répondre aussi vite que possible.</p>
+                    <a href="./form.php" class="btn btn-success mt-5" title="Continuer" alt="boutton continuer">Continuer</a>
+                </section>
+            </section>
+    </body>
 </html>

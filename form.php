@@ -69,9 +69,10 @@
 </head>
 <body>
     <header>
-        <h2 class="text-center mb-4 formulaire" alt="title contact us">Contact Us</h2>
+        
     </header>
-    <p class="text-center mb-5 formulaire">Vous avez des questions ? Des avis? N'hésitez pas à nous contacter via ce formulaire, nos équipes prendront le soin d'y répondre aussi vite que possible.</p>
+    
+        <h2 class="text-center mb-4 formulaire" alt="title contact us">Contact Us</h2>
     <form method="POST" action="" class="text-center m-t-5 formulaire">
     <section class="text-center">
         <input type="text" name="firstname" alt="firstname" placeholder="Firstname" alt="first name" class="rounded col-md-2 offset-md-5 col-sm-8 offset-sm-2 form-control formulaire"><?php echo '<br>'.$firstnameErr ;?><br>
@@ -94,7 +95,9 @@
             </section>
         <input type="submit" value="valider" name="valider" class="btn btn-success validate formulaire" alt="boutton envoyer">
     </form>
+    
     <img src="./assets/img/becodetransp.png" width="256px" height="256px" alt="Logo Becode" class="logo col-md-2 offset-md-5 mt-5 col-sm-4 offset-sm-4 formulaire">
+
     <script src="./assets/js/scroll.js"></script>
 </body>
 </html>
