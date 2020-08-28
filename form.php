@@ -21,7 +21,7 @@
     @$subject = Securisation($_POST['subject']);
     @$textfield = Securisation($_POST['textfield']);
     // SANITIZE JMS TROP PRUDENT
-    
+
     $firstname = filter_var($firstname, FILTER_SANITIZE_STRING);
     $lastname = filter_var($lastname, FILTER_SANITIZE_STRING);
     $country = filter_var($country, FILTER_SANITIZE_STRING);
@@ -34,7 +34,7 @@
                 $firstnameErr = '<span class="error"> Vous n avez pas mis de prénom </span><br>';
             }if($lastname === ''){
                 $lastnameErr = '<span class="error"> Vous n avez pas mis de nom </span><br>';
-            }if(!$gender === 'Mr' ||  !$gender === 'Mme'){
+            }if($gender === '' ||  $gender === ''){
                 $genderErr = '<span class="error"> Vous n avez pas mis de genre </span><br>';
             }if($mail === ''){
                 $mailErr = '<span class="error"> Vous n avez pas mis d\'E-mail </span><br>';
@@ -71,6 +71,7 @@
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
            <link rel="stylesheet" href="./assets/css/formstyle.css"> 
            <link href="https://fonts.googleapis.com/css2?family=Bellota:wght@300;400;700&display=swap" rel="stylesheet">
+           <meta name="Description" content="Site de Hackers-poulette">
            <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
     <title>Contact</title>
 </head>
