@@ -11,7 +11,7 @@
         return $donnees;
     }
 
-
+    // A TRAVERS MA FUNCTION SECU PLUS SANITIZE
     @$valider = Securisation($_POST['valider']);
     @$firstname = Securisation($_POST['firstname']);
     @$lastname = Securisation($_POST['lastname']);
@@ -20,6 +20,13 @@
     @$country = Securisation($_POST['country']);
     @$subject = Securisation($_POST['subject']);
     @$textfield = Securisation($_POST['textfield']);
+    // SANITIZE JMS TROP PRUDENT
+    
+    $firstname = filter_var($firstname, FILTER_SANITIZE_STRING);
+    $lastname = filter_var($lastname, FILTER_SANITIZE_STRING);
+    $country = filter_var($country, FILTER_SANITIZE_STRING);
+    $textfield = filter_var($textfield,FILTER_SANITIZE_STRING);
+    $mail = filter_var($mail, FILTER_SANITIZE_EMAIL);
 
    
         if(isset($_POST['valider'])){
